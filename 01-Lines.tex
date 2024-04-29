@@ -1,0 +1,79 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Lines}
+\subtitle{Using Beamer}
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Definition of a line}
+  \begin{itemize}
+  \item Lines are defined as a set of points
+  \item Lines can be defined in 2D or 3D
+  \item To describe a line, you need to know a point and a direction
+  \item Vectors are helpful to define a line
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vector basics}
+  \begin{itemize}
+  \item Vectors are identified as bolded text, or a line or arrow over the variable
+  \item Vectors can be defined by a triple of numbers, for each basis direction
+  \item Vectors are added by connecting tails to heads
+  \item A point can be represented by a vector going from the origin to that point
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vector equation of a line}
+  \begin{itemize}
+  \item If we know one point and the direction, we can describe the whole line
+  \item The vector equation for a line is given by:
+  \item $\vec{r} = \vec{r_0} + t * \vec{d}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Parametric equation of a line}
+  If we have the coordinates for each of the vectors, we can define:
+  \begin{itemize}
+  \item $\vec{r} = <x, y, z>$
+  \item $\vec{d} = <a, b, c>$
+  \item $\vec{r_0} = <x_0, y_0, z_0>$
+  \end{itemize}
+  This leads to the parametric equations:
+  \begin{itemize}
+  \item $x = x_0 + at$
+  \item $y = y_0 + bt$
+  \item $z = z_0 + ct$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Symmetric equations of a line}
+  We can solve for t, to get the symmetric equations:
+  \begin{itemize}
+  \item $t = \frac{x - x_0}{a} = \frac{y - y_0}{b} = \frac{z - z_0}{c}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Skew lines}
+  Unlike in 2D, in 3D, lines can be not and yet still not intersect. These are called skew lines. In order to prove, you need to:
+  \begin{itemize}
+  \item show not parallel by showing that there is no C such that $\vec{d_1} = C\vec{d_2}$
+  \item show no intersection by looking at the system of equations for both lines, assuming that there is some $<x, y, z>$ that is on both lines
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
