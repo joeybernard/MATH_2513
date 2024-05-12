@@ -1,0 +1,38 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Partial Derivatives}
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Definitions}
+  Remember the limit definition of a derivative
+  \begin{itemize}
+  \item $ f'(a) = \lim_{h\to\infty} \frac{f(a+h) - f(a)}{h}$
+  \end{itemize}
+
+  For notation, we have
+  \begin{itemize}
+  \item $\frac{df}{dx}$  -  full derivative with respect to x
+  \item $\frac{\partial f}{\partial x}$  -  partial derivative with respect to x, also written as $f_x$
+  \item These are almost never the same
+  \end{itemize}
+
+  So, the limit definition of a partial derivative is given by
+  \begin{itemize}
+  \item $f_x(x, y) = \lim_{h\to\infty} \frac{f(x+h, y) - f(x, y)}{h}$
+  \item can also be written equivalently for $f_y$
+  \end{itemize}
+  
+\end{frame}
+
+\end{document}
+

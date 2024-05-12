@@ -1,0 +1,39 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Chain Rule and Implicit Differentiation}
+
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Chain Rule}
+  \begin{itemize}
+  \item Recall the chain rule from previous calculus classes
+  \item $\frac{du(f)}{dx} = \frac{du}{df} * \frac{df}{dx}$
+  \item This becomes a bit messier when we move to partial derivatives
+  \item $\frac{\partial u(f,g)}{\partial x} = \frac{\partial u}{\partial f} * \frac{\partial f}{\partial x} + \frac{\partial u}{\partial g} * \frac{\partial g}{\partial x}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Implicit Differentiation}
+  \begin{itemize}
+  \item Sometimes, we can't rearrange $F(x,y)$ into some form of $y(x) = ...$
+  \item In these cases, we sometimes still need the derivative of $y(x)$
+  \item We can use implicit differentiation
+    \begin{itemize}
+    \item $\frac{dy}{dx} = \frac{-F_x}{F_y}$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
