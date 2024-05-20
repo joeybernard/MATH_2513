@@ -1,0 +1,45 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Tangent Planes}
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Surfaces of the form z=f(x,y)}
+  \begin{itemize}
+  \item To find a tangent plane at a point, need two tangent vectors here
+  \item The two tangent vectors are found with the partial derivatives:
+    \begin{itemize}
+    \item $[1, 0, f_x(x_0, y_0)]$
+    \item $[0, 1, f_y(x_0, y_0)]$
+    \end{itemize}
+  \item Taking the cross product gives you the normal vector: $[-f_x(x_0, y_0), -f_y(x_0, y_0), 1]$
+  \item The resulting equation of a plane is
+    \begin{itemize}
+    \item $z = f(x_0, y_0) + f_x(x_0, y_0)(x - x_0) + f_y(x_0, y_0)(y - y_0)$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Surfaces of the form G(x, y, z) = 0}
+  \begin{itemize}
+  \item Everything here also works for equations of the form $G(x, y, z) = K$, where K is a constant
+  \item The gradient of G, $\nabla G(x_0, y_0, z_0)$ is the normal of the tangent plane at the point $(x_0, y_0, z_0)$
+  \item The equation of this tangent plane is given by
+    \begin{itemize}
+    \item $\nabla G(x_0, y_0, z_0) \dot [x-x_0, y-y_0, z-z_0] = 0$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
