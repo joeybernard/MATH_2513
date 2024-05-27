@@ -1,0 +1,37 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Linear Approximation}
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Linear Approximations}
+  \begin{itemize}
+  \item We want to approximate a function near some starting point $(x_0, y_0)$
+  \item The simplest approximation is to assume that the function is constant
+  \item The next simplest is that it is linear
+  \item We get the linear form in 2D by looking at the tangent line at a point along a curve
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3D Linear Approximations}
+  \begin{itemize}
+  \item moving to two independent variables has the form
+    \begin{itemize}
+    \item $f(x_0 + \Delta x, y_0 + \Delta y) \approx f(x_0, y_0) + \frac{\partial f}{\partial x}(x_0, y_0) \Delta x + \frac{\partial f}{\partial x}(x_0, y_0) \Delta y$
+    \end{itemize}
+    \item Can simply add extra terms for each of the additional coordinates
+  \end{itemize}
+\end{frame}
+  
+\end{document}
+

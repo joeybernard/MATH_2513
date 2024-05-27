@@ -1,0 +1,37 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Taylor Expansions}
+
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{2D Taylor Polynomial}
+  \begin{itemize}
+  \item In previous courses, should have seen the form
+    \begin{itemize}
+    \item \[ \sum_{k=0}^{n} \frac{1}{k!} f^{(k)}(a) \dot (x - a)^k \]
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{3D Taylor Polynomials}
+  \begin{itemize}
+  \item Adding the extra variable leads to
+    \begin{itemize}
+    \item \[ f(x_0 + \Delta x, y_0 + \Delta y) \approx \sum_{l,m \geq 0}^{l+m \leq n} \frac{1}{l! m!} \frac{\partial^{l+m}f}{\partial x^l \partial y^m}(x_0, y_0)(\Delta x)^l (\Delta y)^m \]
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\end{document}
+
