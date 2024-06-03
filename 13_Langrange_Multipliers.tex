@@ -1,0 +1,50 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Lagrange Multipliers}
+
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Constrained Optimization Problem}
+  \begin{itemize}
+  \item We have a problem of the form
+    \begin{itemize}
+    \item Find the maximum and minimum values of the function f(x,y) for (x,y) on the curve g(x,y) = 0
+    \end{itemize}
+  \item where
+    \begin{itemize}
+    \item f(x,y) is the objective function
+    \item g(x,y) is the constraint function
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Lagrange Multipliers}
+  \begin{itemize}
+  \item Let f(x,y,z) and g(x,y,z) have continuous first partial derivatives in a region of $R^3$ that contains the surface S given by the equation g(x,y,z) = 0. Further assume that $\nabla g(x,y,z) \ne 0$ on S.
+  \item If f, restricted to the surface S, has a local extreme value at the point (a,b,c) on s, then there is a real number $\lambda$ such that
+    \begin{itemize}
+    \item $\nabla f(a,b,c) = \lambda \nabla g(a,b,c)$
+    \end{itemize}
+  \item that is
+    \begin{itemize}
+    \item $f_x(a,b,c) = \lambda g_x(a,b,c)$
+    \item $f_y(a,b,c) = \lambda g_y(a,b,c)$
+    \item $f_z(a,b,c) = \lambda g_z(a,b,c)$
+    \end{itemize}
+  \item The number $\lambda$ is called a Lagrange Multiplier
+  \end{itemize}
+\end{frame}
+
+\end{document}
+

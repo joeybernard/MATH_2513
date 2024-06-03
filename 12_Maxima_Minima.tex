@@ -1,0 +1,56 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Maxima and Minima}
+
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Critical Points}
+  \begin{itemize}
+  \item In 2D, maxima and minima are when the tangents of the curve are flat
+  \item This is when the first derivative (slope of the tangent line) is equal to zero
+  \item In 3D, this is similar, except that we need to use the gradient
+  \item So, maxima and minima happen when the gradient is zero, but this can happen outside of maxima and minima
+  \item We introduce a new term, a critical point, defined by the gradient being equal to zero
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Second Derivative test}
+  \begin{itemize}
+  \item We can use the second derivative to help decide local maxima and minima in 2D
+  \item If f'' < 0, we will have a local maxima
+  \item If f'' > 0, we will have a local minima
+  \item If f'' = 0, we don't know
+  \item The equivalent in 3D is
+    \begin{itemize}
+    \item Use the descriminant of f: $D(x,y) = f_{xx}(x,y)f_{yy}(x,y) - f_{xy}^2$
+    \item D > 0 and $f_{xx} > 0$ : f has a local minimum
+    \item D > 0 and $f_{xx} < 0$ : f has a local maximum
+    \item D < 0 : f has a saddle point
+    \item D = 0 : we don't know
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Global Maxima and Minima}
+  \begin{itemize}
+  \item 'Global' maxima and minima are always defined on an interval
+  \item With two independent variables, may use the unit disc ($x^2 + y^2 \le 1$
+  \item may need to use a parameterization to figure out the behaviour of the equation
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
