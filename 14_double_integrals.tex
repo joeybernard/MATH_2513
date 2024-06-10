@@ -1,0 +1,48 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+
+\title{Double Integrals}
+
+\author{Joey Bernard}
+\institute{University of New Brunswick}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vertical Slices}
+  \begin{itemize}
+  \item We have a function measuring something, bounded by two equations of the form y=T(X), y=B(x)
+    \begin{itemize}
+    \item $\int^b_a dx \int^{T(x)}_{B(x)} dy f(x,y)$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Horizontal Slices}
+  \begin{itemize}
+  \item We have a function measuring something, bounded by two equations of the form x=L(x), x=R(x)
+    \begin{itemize}
+    \item $\int^d_c dy \int^{R(y)}_{L(y)} dx f(x,y)$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arithmetic of Integration}
+  \begin{itemize}
+  \item $\iint (f(x,y) + g(x,y)) dx dy = \iint f(x,y) dx dy + \iint g(x,y) dx dy$
+  \item $\iint (f(x,y) - g(x,y)) dx dy = \iint f(x,y) dx dy - \iint g(x,y) dx dy$
+  \item $\iint Cf(x,y) dx dy = C \iint f(x,y) dx dy$
+  \item $\iint_R f(x,y) dx dy = \iint_{R1} f(x,y) dx dy + \iint_{R2} f(x,y) dx dy$
+  \end{itemize}
+\end{frame}
+
+
+\end{document}
+
